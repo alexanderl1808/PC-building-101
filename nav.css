@@ -1,0 +1,134 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: helvetica;
+}
+
+   @font-face {
+    src: url(fontovi/Dosis-VariableFont_wght.ttf);
+    font-family: ryzen;
+}
+
+ header {
+        
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    
+}
+
+ nav ul {
+    
+    list-style: none;
+    display: flex;    
+}
+
+ nav ul li {
+    margin: 2rem 3rem;
+    font-family: ryzen;
+    font-weight: 600;
+    font-size: 2rem;
+    position: relative;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+nav ul li a {
+    
+    text-decoration: none;
+    color: white;
+}
+
+/* ----dropmenu----- */
+
+.dropmenu {
+    z-index: 0;
+    position: absolute;
+    margin-top: 0.4rem;
+    margin-left: -3.3rem;
+    display: flex;
+    width: 160%;
+    flex-direction: column;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 1);
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    border-radius: 7px;
+    
+
+}
+
+.dropmenu li a {
+    margin: 0.2rem;
+    padding: 0.5rem;
+    color: white;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.dropmenu li {
+    margin: 2rem 0 0 0;    
+}
+
+.dugme2 a  {
+    
+    color: black ;
+    background-color: white ;    
+}
+
+.dropmenu li a{
+    background-color: black;
+}
+
+.dugme2 {       
+    padding: 0;
+}
+
+.dugme2:hover .dropmenu {
+    visibility: visible;    
+}
+
+.dropmenu li a:hover {
+    color: black;
+    font-size: 1.7rem;
+}
+
+.dropmenu li a:hover, nav ul li a:hover {
+    color: black;
+    background-color: white;
+    transition: 0.2s ease;
+}
+
+ nav ul li a, .dropmenu li a {
+    padding: 0.5rem;
+    border-radius: 10px;
+    text-shadow: 0px 0px 7px white;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+    border-radius: 50px;
+
+  }
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(47, 47, 47);
+    transition: 0.2s ease;
+    box-shadow: 0 0 5px white;
+    border-radius: 50px;
+}

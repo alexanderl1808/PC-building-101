@@ -1,0 +1,39 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+footer {
+    
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 1);
+    width: 100%;
+    height: 7rem;
+}
+
+.brgod {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 1.7rem;
+}
+
+.podaci {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.podaci p{
+    width: 20vw;
+
+
+}
